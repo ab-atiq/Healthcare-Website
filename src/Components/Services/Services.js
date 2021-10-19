@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../Header/Header';
 import Service from '../Service/Service';
 import './Services.css'
 
@@ -12,7 +11,7 @@ const Services = () => {
     }, [])
     return (
         <div>
-            <h1>This is services section.</h1>
+            <h1 className='text-primary my-5'>Services:</h1>
             <div className="container-fluid services-container mb-5">
                 {
                     services.map(service => <Service key={Service.title} service={service} ></Service>)

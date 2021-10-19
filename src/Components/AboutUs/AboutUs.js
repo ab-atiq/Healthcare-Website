@@ -10,7 +10,7 @@ const AboutUs = () => {
     }, [])
     return (
         <div>
-            <h1>About us</h1>
+            <h1 className='text-primary'>About us</h1>
             {
                 about.map(ab => <About key={ab.name} about={ab} ></About>)
             }
@@ -21,11 +21,13 @@ const AboutUs = () => {
 const About = (props) => {
     const { name, image, specialist, degree } = props.about;
     return (
-        <div className="single-about">
+        <div className="single-about p-3">
             <img src={image} alt="" />
-            <h1>{name}</h1>
-            <h2>{degree}</h2>
-            <h3>{specialist}</h3>
+            <div className='my-3'>
+                <h1>{name}</h1>
+                <h3>{degree}</h3>
+                <h4>{specialist}</h4>
+            </div>
         </div>
     )
 }

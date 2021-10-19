@@ -11,7 +11,7 @@ const Departments = () => {
     }, []);
     return (
         <div className='container-fluid'>
-            <h1>This is Departments</h1>
+            <h1 className='text-primary my-3'>Departments</h1>
             {
                 departments.map(department => <Department key={department.department_id} department={department}></Department>)
             }
