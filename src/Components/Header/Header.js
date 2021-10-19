@@ -18,7 +18,7 @@ const Header = () => {
                         <Nav.Link as={Link} to="/about">About Us</Nav.Link>
 
                         <Navbar.Text>
-                            Signed in as: {user?.displayName}
+                            {user?.displayName && <>Signed in as: {user?.displayName}</>}
                         </Navbar.Text>
 
                         {user.email ? <Button onClick={logOut}> Logout</Button> :
