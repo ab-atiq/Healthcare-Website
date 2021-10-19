@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Header from '../Header/Header';
+import useAuth from '../../Hooks/useAuth';
 import './LogIn.css';
 
 const LogIn = () => {
+    const { signInUsingGoogle } = useAuth();
     return (
         <div>
             <h1>Please Login</h1>
@@ -31,7 +32,7 @@ const LogIn = () => {
                     </Button>
                     <br />
                     <br />
-                    <Button variant="primary" type="text">
+                    <Button onClick={signInUsingGoogle}>
                         Sign In Google
                     </Button>{' '}
                     <Link className='text-white' style={{ textDecoration: 'none' }} to='/registration'><Button>Registration</Button></Link>

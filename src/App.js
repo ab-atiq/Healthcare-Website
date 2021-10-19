@@ -9,42 +9,45 @@ import LogIn from './Components/LogIn/LogIn';
 import Registration from './Components/Registration/Registration';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
+import AuthProvider from './contexts/AuthProvider';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header></Header>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header></Header>
 
-        <Switch>
-          <Route exact path='/'>
-            <Home></Home>
-          </Route>
-          <Route path='/home'>
-            <Home></Home>
-          </Route>
-          <Route path='/departments'>
-            <Departments></Departments>
-          </Route>
-          <Route path='/services'>
-            <Services></Services>
-          </Route>
-          <Route path='/about'>
-            <AboutUs></AboutUs>
-          </Route>
-          <Route path='/logIn'>
-            <LogIn></LogIn>
-          </Route>
-          <Route path='/registration'>
-            <Registration></Registration>
-          </Route>
-          <Route path='*'>
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
+          <Switch>
+            <Route exact path='/'>
+              <Home></Home>
+            </Route>
+            <Route path='/home'>
+              <Home></Home>
+            </Route>
+            <Route path='/departments'>
+              <Departments></Departments>
+            </Route>
+            <Route path='/services'>
+              <Services></Services>
+            </Route>
+            <Route path='/about'>
+              <AboutUs></AboutUs>
+            </Route>
+            <Route path='/logIn'>
+              <LogIn></LogIn>
+            </Route>
+            <Route path='/registration'>
+              <Registration></Registration>
+            </Route>
+            <Route path='*'>
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
 
-        <Footer></Footer>
-      </BrowserRouter>
+          <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
