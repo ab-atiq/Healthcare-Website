@@ -14,7 +14,7 @@ const Home = () => {
                             <Carousel.Caption>
                                 <Row>
                                     <Col className='py-5 my-5'>
-                                        <div className='bg-dark mb-5' >
+                                        <div className='bg-dark text-white mb-5' >
                                             <h3>INSPIRING BETTER HEALTH</h3>
                                             <h1>Healthy heart,healthy family</h1>
                                             <p>Globally harness multimedia based collaboration and idea-sharing with backend products. Continually whiteboard superior opportunities via covalent scenarios.</p>
@@ -33,7 +33,7 @@ const Home = () => {
                             <Carousel.Caption>
                                 <Row>
                                     <Col className='py-5 my-5'>
-                                        <div className='bg-dark mb-5' >
+                                        <div className='bg-dark text-white mb-5' >
                                             <h3>Third slide Left</h3>
                                             <h2>GROWING TO MEET YOUR NEEDS</h2>
                                             <h1>Your wealth,is your health</h1>
@@ -53,7 +53,7 @@ const Home = () => {
                             <Carousel.Caption className='' style={{ display: 'flex' }}>
                                 <Row>
                                     <Col className='py-5 my-5'>
-                                        <div className='bg-dark mb-5' >
+                                        <div className='bg-dark text-white mb-5' >
                                             <h3>Third slide Left</h3>
                                             <h2>THE RIGHT PEDIATRICIAN</h2>
                                             <h1>Your wealth,is your health</h1>
