@@ -10,7 +10,7 @@ const AboutUs = () => {
     }, [])
     return (
         <div>
-            <h1 className='text-primary'>About us</h1>
+            <h1 className='text-primary my-3'>About us</h1>
             {
                 about.map(ab => <About key={ab.name} about={ab} ></About>)
             }

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Carousel, Col, Container, Row } from 'react-bootstrap';
+import AboutUs from '../AboutUs/AboutUs';
+import Departments from '../Departments/Departments';
 import Services from '../Services/Services';
 
 const Home = () => {
@@ -69,6 +71,8 @@ const Home = () => {
                 </Container>
             </div>
             <Services></Services>
+            <Departments></Departments>
+            <AboutUs></AboutUs>
         </div>
     );
 };
