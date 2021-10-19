@@ -1,0 +1,42 @@
+[
+    {   "department_id":"2101",
+        "name": "General surgery",
+        "image": "https://i.ibb.co/v3rrxRd/Peripheral-artery-angioplasty3.jpg",
+        "description": "Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources. "
+    },
+    {   "department_id":"2102",
+        "name": "Cosmetic surgery",
+        "image": "https://i.ibb.co/QDv9vKz/cosmetic.jpg",
+        "description": "Credibly innovate granular internal or “organic” sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks. "
+    },
+    {   "department_id":"2103",
+        "name": "Neurosurgery",
+        "image": "https://i.ibb.co/5RKSsdC/neurosurgery.jpg",
+        "description": "Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business applications through revolutionary catalysts for change. Seamlessly underwhelm optimal testing procedures whereas bricks-and-clicks processes."
+    },
+    {   "department_id":"2104",
+        "name": "Otolaryngology",
+        "image": "https://i.ibb.co/2cdM4c4/Peripheral-artery-angioplasty.jpg",
+        "description": "Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures."
+    },
+    {   "department_id":"2105",
+        "name": "Cardiogeriatrics",
+        "image": "https://i.ibb.co/xC9J4qz/genaral.jpg",
+        "description": "Dynamically target high-payoff intellectual capital for customized technologies. Objectively integrate emerging core competencies before process-centric communities. Dramatically evisculate holistic innovation rather than client-centric data."
+    },
+    {   "department_id":"2106",
+        "name": "Dental department",
+        "image": "https://i.ibb.co/YNScVFd/health.jpg",
+        "description": "Dynamically target high-payoff intellectual capital for customized technologies. Objectively integrate emerging core competencies before process-centric communities. Dramatically evisculate holistic innovation rather than client-centric data."
+    },
+    {   "department_id":"2107",
+        "name": "Orthopedics department",
+        "image": "https://i.ibb.co/9Zs9RBg/Peripheral-artery-angioplasty2.jpg",
+        "description": "Enthusiastically mesh long-term high-impact infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing procedures."
+    },
+    {   "department_id":"2108",
+        "name": "Screening department",
+        "image": "https://i.ibb.co/v3rrxRd/Peripheral-artery-angioplasty3.jpg",
+        "description": "Enthusiastically mesh long-term high-impact infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing procedures."
+    }
+]

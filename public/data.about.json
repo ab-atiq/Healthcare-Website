@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Prof. Dr. T. A. Chowdhury",
+        "image": "https://www.doctorbangladesh.com/wp-content/uploads/dr-male-75x85.jpg",
+        "degree": "MBBS, FRCS, FRCOG, FRCP, FCPS (PK), FCPS (BD)",
+        "specialist": "Gynecology & Infertility Specialist",
+        "workplace": "Birdem General Hospital & Ibrahim Medical College"
+    },
+    {
+        "name": "Prof. Brig. Gen. Dr. Liza Chowdhury",
+        "image": "https://www.doctorbangladesh.com/wp-content/uploads/dr-female-75x85.jpg",
+        "degree": "MBBS, MCPS (OBGYN), DGO, FCPS (OBGYN), Training (Laparoscopic Surgery & Infertility)",
+        "specialist": "Gynecology, Obstetrics, Infertility Specialist & Surgeon",
+        "workplace": "Armed Forces Medical College, Dhaka"
+    },
+    {
+        "name": "Prof. Dr. Samsad Jahan Shelly",
+        "image": "https://www.doctorbangladesh.com/wp-content/uploads/dr-female-75x85.jpg",
+        "degree": "MBBS, MS (OBGYN)",
+        "specialist": "Gynecology, Infertility Specialist & Surgeon",
+        "workplace": "Birdem General Hospital & Ibrahim Medical College"
+    },
+    {
+        "name": "Prof. Dr. Kishwar Sultana",
+        "image": "https://www.doctorbangladesh.com/wp-content/uploads/dr-female-75x85.jpg",
+        "degree": "MBBS, FCPS (OBGYN), MCPS (OBGYN), DGO (OBGYN)",
+        "specialist": "Gynecology, Obstetrics Specialist & Surgeon",
+        "workplace": "Holy Family Red Crescent Medical College & Hospital"
+    },
+    {
+        "name": "Dr. Sadia Mahfiza Khanam",
+        "image": "https://www.doctorbangladesh.com/wp-content/uploads/dr-female-75x85.jpg",
+        "degree": "MBBS, BCS (Health), FCPS (OBGYN)",
+        "specialist": "Gynecology, Obstetrics Specialist & Surgeon",
+        "workplace": "Dhaka Medical College & Hospital"
+    },
+    {
+        "name": "Prof. Dr. Begum Hosne Ara",
+        "image": "https://www.doctorbangladesh.com/wp-content/uploads/dr-female-75x85.jpg",
+        "degree": "MBBS, DGO (OBGYN), FCPS (OBGYN), MCPS (OBGYN)",
+        "specialist": "Gynecology, Obstetrics Specialist & Surgeon",
+        "workplace": "Dhaka Central International Medical College & Hospital"
+    },
+    {
+        "name": "Prof. Dr. Jonaid Shafiq",
+        "image": "https://www.doctorbangladesh.com/wp-content/uploads/dr-male-75x85.jpg",
+        "degree": "MBBS (DMC), PhD (Anesthesiology, Japan)",
+        "specialist": "Pain Management Specialist",
+        "workplace": "Japan Bangladesh Friendship Hospital"
+    }
+]
