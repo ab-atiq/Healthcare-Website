@@ -11,6 +11,8 @@ import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
+
 
 function App() {
   return (
@@ -31,6 +33,9 @@ function App() {
             </Route>
             <PrivateRoute path='/services'>
               <Services></Services>
+            </PrivateRoute>
+            <PrivateRoute path='/service/:serviceId'>
+              <ServiceDetails></ServiceDetails>
             </PrivateRoute>
             <PrivateRoute path='/about'>
               <AboutUs></AboutUs>
