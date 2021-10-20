@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Components/LogIn/Firebase/firebase.init";
 
@@ -10,23 +10,39 @@ const useFirebase = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error,setError]=useState('')
+    const [error, setError] = useState('')
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
     // create email registration handle
     const handleEmailChange = e => {
+        console.log(e.target.value);
         setEmail(e.target.value);
     }
 
     const handlePasswordChange = e => {
+        console.log(e.target.value);
         setPassword(e.target.value);
+    }
+
+    const loggedINUser = e => {
+        e.preventDefault();
+        console.log(email, password);
+        signInWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                setError('');
+            })
+            .catch(error => {
+                setError(error.message);
+            })
     }
 
     const handleRegistration = e => {
         e.preventDefault();
-        if(password.length<6){
+        if (password.length < 6) {
             setError('Password Must be 6 character');
             return;
         }
@@ -36,7 +52,7 @@ const useFirebase = () => {
                 console.log(user);
                 setError('');
             })
-            .catch(error=>{
+            .catch(error => {
                 setError(error.message);
             })
     }
@@ -79,7 +95,8 @@ const useFirebase = () => {
         handleRegistration,
         handleEmailChange,
         handlePasswordChange,
-        error
+        error,
+        loggedINUser
     }
 }
 

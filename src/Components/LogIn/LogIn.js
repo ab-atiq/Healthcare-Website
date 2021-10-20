@@ -5,7 +5,7 @@ import useAuth from '../../Hooks/useAuth';
 import './LogIn.css';
 
 const LogIn = () => {
-    const { signInUsingGoogle } = useAuth();
+    const { signInUsingGoogle, loggedINUser, handlePasswordChange, handleEmailChange, error } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/';
@@ -23,10 +23,10 @@ const LogIn = () => {
         <div>
             <h1 className='text-primary'>Please Login</h1>
             <div className="logIn-container mb-5">
-                <Form>
+                <Form onSubmit={loggedINUser}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control onBlur={handleEmailChange} type="email" placeholder="Enter email" />
                         <Form.Text className="text-muted">
                             We'll never share your email with anyone else.
                         </Form.Text>
@@ -34,11 +34,13 @@ const LogIn = () => {
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Password" />
                     </Form.Group>
-
+                    <div className='text-danger'>
+                        {error}
+                    </div>
                     <Button variant="primary" type="submit">
-                        Submit
+                        Login
                     </Button>{' '}
                     <Button variant="primary" type="reset">
                         Reset
