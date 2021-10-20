@@ -43,13 +43,13 @@ const LogIn = () => {
                     <Button variant="primary" type="reset">
                         Reset
                     </Button>
-                    <br />
-                    <br />
-                    <Button onClick={handleGoogleLogin}>
-                        Sign In Google
-                    </Button>{' '}
-                    <Link className='text-white' style={{ textDecoration: 'none' }} to='/registration'><Button>Registration</Button></Link>
                 </Form>
+                <br />
+                <br />
+                <Button onClick={handleGoogleLogin}>
+                    Sign In Google
+                </Button>{' '}
+                <Link className='text-white' style={{ textDecoration: 'none' }} to='/registration'><Button>Registration</Button></Link>
             </div>
         </div>
     );

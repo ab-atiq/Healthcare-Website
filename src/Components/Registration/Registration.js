@@ -21,7 +21,7 @@ const Registration = () => {
 
     return (
         <div>
-            <h1>This is Registration</h1>
+            <h1>Please Registration</h1>
             <div className="logIn-container mb-5">
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -43,13 +43,13 @@ const Registration = () => {
                     <Button variant="primary" type="reset">
                         Reset
                     </Button>
-                    <br />
-                    <br />
-                    <Button onClick={handleGoogleLogin}>
-                        Sign In Google
-                    </Button>{' '}
-                    <Link className='text-white' style={{ textDecoration: 'none' }} to='/logIn'><Button>Log In</Button></Link>
                 </Form>
+                <br />
+                <br />
+                <Button onClick={handleGoogleLogin}>
+                    Sign In Google
+                </Button>{' '}
+                <Link className='text-white' style={{ textDecoration: 'none' }} to='/logIn'><Button>Log In</Button></Link>
             </div>
         </div>
     );
