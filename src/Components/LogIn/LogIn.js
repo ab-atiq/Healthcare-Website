@@ -21,7 +21,7 @@ const LogIn = () => {
 
     return (
         <div>
-            <h1>Please Login</h1>
+            <h1 className='text-primary'>Please Login</h1>
             <div className="logIn-container mb-5">
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">

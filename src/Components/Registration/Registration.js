@@ -4,7 +4,7 @@ import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 const Registration = () => {
-    const { signInUsingGoogle } = useAuth();
+    const { signInUsingGoogle, handleRegistration, handlePasswordChange,handleEmailChange,error } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/';
@@ -21,12 +21,12 @@ const Registration = () => {
 
     return (
         <div>
-            <h1>Please Registration</h1>
+            <h1 className='text-primary'>Please Registration</h1>
             <div className="logIn-container mb-5">
-                <Form>
+                <Form onSubmit={handleRegistration}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control onBlur={handleEmailChange} type="email" placeholder="Enter email" required/>
                         <Form.Text className="text-muted">
                             We'll never share your email with anyone else.
                         </Form.Text>
@@ -34,8 +34,12 @@ const Registration = () => {
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Password" required/>
                     </Form.Group>
+
+                    <div className='text-danger'>
+                        {error}
+                    </div>
 
                     <Button variant="primary" type="submit">
                         Submit
